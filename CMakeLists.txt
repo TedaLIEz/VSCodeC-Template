@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(LearningC++)
+set(SOURCE src/main.cpp)
+include_directories(include/)
+add_executable(${PROJECT_NAME} ${SOURCE})
