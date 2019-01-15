@@ -42,10 +42,6 @@
             "options": {
                 "cwd": "${workspaceFolder}/build"
             },
-            "group": {
-                "kind": "build",
-
-            },
             "dependsOn": ["cmake"]
         }
     ]

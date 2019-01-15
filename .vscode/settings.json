@@ -1,4 +1,31 @@
 {
-    "clang.cxxflags": ["-std=c++11"],
-    "clang.cflags": ["c11"]
+    "clang.cxxflags": ["-std=c++11",
+    "-I${workspaceRoot}/include"],
+    "clang.cflags": [
+        "c11",
+        "-Ic:${workspaceRoot}/include"
+    ],
+    "clang.executable": "clang",
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.autoIndent": false,
+      "editor.tabSize": 4,
+    "files.associations": {
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "cstddef": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "algorithm": "cpp",
+        "__bit_reference": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp"
+    },
+    "cmake.configureOnOpen": true
 }

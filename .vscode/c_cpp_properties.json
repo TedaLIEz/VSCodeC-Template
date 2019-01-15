@@ -3,7 +3,7 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}",
+                "${workspaceFolder}/**",
                 "${workspaceFolder}/include"
             ],
             "defines": [],
@@ -14,18 +14,14 @@
             "cStandard": "c11",
             "cppStandard": "c++11",
             "intelliSenseMode": "clang-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools",
             "browse": {
-				"path": [
-					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
-					"/usr/local/include",
-					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.1.0/include",
-					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
-					"/usr/include",
-					"${workspaceRoot}"
-				],
-				"limitSymbolsToIncludedHeaders": true,
-				"databaseFilename": ""
-			}
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${workspaceFolder}/include"
+                ]
+            }
         }
     ],
     "version": 4
